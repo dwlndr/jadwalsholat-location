@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Times</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #f1f5f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: blueviolet;
+      }
+      .ket {
+        text-align: center;
+        margin-top: 20%;
+        color: rgb(49, 17, 79);
+      }
+      th {
+        background-color: rgb(159, 142, 255);
+      }
+      tr {
+        background-color: rgb(204, 195, 251);
+        height: 40px;
+      }
+      #tanggalini {
+        margin-bottom: 20px;
+        color: rgb(49, 17, 79);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero-sholat" class="hero is-fullheight is-fullwidth">
+      <div class="ket">
+        <h1>Prayer Times</h1>
+        <p>Turn on your location settings to get the appropriate time</p>
+      </div>
+      <div id="tanggalini"></div>
+      <div class="table-sholat">
+        <table class="table mt-5">
+          <tbody id="prayerTimesBody">
+            <tr>
+              <th width="500px">Prayer Time</th>
+              <th width="200px">Time</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
